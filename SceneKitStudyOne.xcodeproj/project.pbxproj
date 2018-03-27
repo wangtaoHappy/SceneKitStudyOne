@@ -13,6 +13,9 @@
 		935F6A452069EB2D007EEE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935F6A442069EB2D007EEE4D /* Assets.xcassets */; };
 		935F6A482069EB2D007EEE4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935F6A462069EB2D007EEE4D /* LaunchScreen.storyboard */; };
 		935F6A4B2069EB2D007EEE4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 935F6A4A2069EB2D007EEE4D /* main.m */; };
+		935F6A5A206A127C007EEE4D /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935F6A59206A127C007EEE4D /* SceneKit.framework */; };
+		935F6A5C206A193B007EEE4D /* 今生今世遥不可及.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 935F6A5B206A193B007EEE4D /* 今生今世遥不可及.mp3 */; };
+		935F6A5F206A214A007EEE4D /* WTMusicPlayNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 935F6A5E206A214A007EEE4D /* WTMusicPlayNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		935F6A472069EB2D007EEE4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		935F6A492069EB2D007EEE4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935F6A4A2069EB2D007EEE4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		935F6A59206A127C007EEE4D /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		935F6A5B206A193B007EEE4D /* 今生今世遥不可及.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "今生今世遥不可及.mp3"; sourceTree = "<group>"; };
+		935F6A5D206A214A007EEE4D /* WTMusicPlayNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMusicPlayNode.h; sourceTree = "<group>"; };
+		935F6A5E206A214A007EEE4D /* WTMusicPlayNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMusicPlayNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935F6A5A206A127C007EEE4D /* SceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,7 @@
 			children = (
 				935F6A3A2069EB2D007EEE4D /* SceneKitStudyOne */,
 				935F6A392069EB2D007EEE4D /* Products */,
+				935F6A58206A127C007EEE4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +67,13 @@
 		935F6A3A2069EB2D007EEE4D /* SceneKitStudyOne */ = {
 			isa = PBXGroup;
 			children = (
+				935F6A5B206A193B007EEE4D /* 今生今世遥不可及.mp3 */,
 				935F6A3B2069EB2D007EEE4D /* AppDelegate.h */,
 				935F6A3C2069EB2D007EEE4D /* AppDelegate.m */,
 				935F6A3E2069EB2D007EEE4D /* ViewController.h */,
 				935F6A3F2069EB2D007EEE4D /* ViewController.m */,
+				935F6A5D206A214A007EEE4D /* WTMusicPlayNode.h */,
+				935F6A5E206A214A007EEE4D /* WTMusicPlayNode.m */,
 				935F6A412069EB2D007EEE4D /* Main.storyboard */,
 				935F6A442069EB2D007EEE4D /* Assets.xcassets */,
 				935F6A462069EB2D007EEE4D /* LaunchScreen.storyboard */,
@@ -69,6 +81,14 @@
 				935F6A4A2069EB2D007EEE4D /* main.m */,
 			);
 			path = SceneKitStudyOne;
+			sourceTree = "<group>";
+		};
+		935F6A58206A127C007EEE4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				935F6A59206A127C007EEE4D /* SceneKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +122,7 @@
 				TargetAttributes = {
 					935F6A372069EB2D007EEE4D = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -131,6 +151,7 @@
 			files = (
 				935F6A482069EB2D007EEE4D /* LaunchScreen.storyboard in Resources */,
 				935F6A452069EB2D007EEE4D /* Assets.xcassets in Resources */,
+				935F6A5C206A193B007EEE4D /* 今生今世遥不可及.mp3 in Resources */,
 				935F6A432069EB2D007EEE4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935F6A5F206A214A007EEE4D /* WTMusicPlayNode.m in Sources */,
 				935F6A402069EB2D007EEE4D /* ViewController.m in Sources */,
 				935F6A4B2069EB2D007EEE4D /* main.m in Sources */,
 				935F6A3D2069EB2D007EEE4D /* AppDelegate.m in Sources */,
@@ -278,12 +300,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KN6539LSM;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y4FK8UXDXW;
 				INFOPLIST_FILE = SceneKitStudyOne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wangtao.SceneKitStudyOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bdc12bb6-856e-4b7d-b6fb-79cc54f41bb2";
+				PROVISIONING_PROFILE_SPECIFIER = "PP For All";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -292,12 +317,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KN6539LSM;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SceneKitStudyOne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wangtao.SceneKitStudyOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
